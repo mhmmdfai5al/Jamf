@@ -14,8 +14,9 @@
 APPSTORE=$(/usr/bin/mdfind "kMDItemAppStoreHasReceipt=1" | grep "Microsoft Excel")
 
 if [[ ${APPSTORE} ]]; then
-	echo "YES"
+	ALLAPPSTORE="YES"
 else 
-	ALLAPPSTORE='NO'
-	echo "${ALLAPPSTORE}"
+	ALLAPPSTORE="NO"
 fi
+
+/bin/echo "<result> $ALLAPPSTORE </result>"
