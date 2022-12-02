@@ -1,2 +1,2 @@
 # Jamf-EA
-Scripts for creating Jamf Extension Attributes
+Various scripts to be used as stansalone Policy and Extension Attributes.
